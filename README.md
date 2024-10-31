@@ -34,8 +34,11 @@ Data should be in JSON format, structured as a dictionary of dictionaries. Below
 `pdf.output("class_schedule.pdf")
 `
 4. The JSON response will include a confirmation message indicating that the PDF was successfully generated and a link to download the PDF.
-`    return jsonify({"message": "PDF generated successfully", "pdf": "http://127.0.0.1:5001/get_pdf"})
+`  return jsonify({"message": "PDF generated successfully", "pdf": "http://127.0.0.1:5001/get_pdf"})
 `
 5. To receive the JSON response on the client side:
 `print(response.json())`
 6. Users have two ways to access the PDF file. The PDF file will be stored on their local drive in the current directory the code is run in. Alternatively, users can click on the PDF link to initiate a GET request to the /get_pdf endpoint to download the PDF.
+
+## UML Diagram
+![image](https://github.com/user-attachments/assets/5be40096-695a-4d88-b008-3c8e6b8852e3)
