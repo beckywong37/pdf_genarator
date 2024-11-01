@@ -29,7 +29,7 @@ def generate_pdf():
 
     # Creates new page in PDF
     pdf.add_page()
-    pdf.set_font("Arial", size=16)
+    pdf.set_font("Courier", size=16)
 
     # Write class schedule to PDF
     for quarter, classes in data.items():

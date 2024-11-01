@@ -19,4 +19,6 @@ data = {
 
 # Request includes url and data
 response = requests.post(url, json=data)
+
+# Print contents of JSON response
 print(response.json())
