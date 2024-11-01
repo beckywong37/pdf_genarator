@@ -47,3 +47,6 @@ return jsonify({"message": "PDF generated successfully", "pdf": "http://127.0.0.
 print(response.json())
 ```
 6. Users have two ways to access the PDF file. The PDF file will be stored on their local drive in the current directory the code is run in. Alternatively, users can click on the PDF link to initiate a GET request to the /get_pdf endpoint to download the PDF.
+
+## UML Diagram
+![img.png](UML_Diagram.png)
