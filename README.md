@@ -1,4 +1,4 @@
-# pdf_generator
+# README: pdf_generator
 Generates PDF from JSON
 
 ## How to Request Data from PDF_Generator
