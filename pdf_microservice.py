@@ -20,14 +20,10 @@ def generate_pdf():
     # Get JSON object containing class schedule
     data = request.get_json()
 
-    # Check data is in dictionary format
     if validate_input(data) is False:
         return jsonify({"message": "Invalid structure. Class schedule should be in dictionary format"})
 
-    # Create PDF which will be saved in directory this code will be run
     pdf = FPDF()
-
-    # Creates new page in PDF
     pdf.add_page()
     pdf.set_font("Courier", size=16)
 
